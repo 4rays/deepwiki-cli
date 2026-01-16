@@ -6,6 +6,12 @@ DeepWiki provides AI-generated documentation for open source repositories. This 
 
 ## Installation
 
+### Using Homebrew (macOS)
+
+```bash
+brew install 4rays/tap/ask-deepwiki
+```
+
 ### Using uvx (recommended)
 
 ```bash
