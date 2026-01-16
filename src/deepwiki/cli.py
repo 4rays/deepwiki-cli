@@ -53,7 +53,7 @@ def handle_error(e: Exception) -> NoReturn:
 
 
 @click.group()
-@click.version_option(version=__version__, prog_name="deepwiki-cli")
+@click.version_option(version=__version__, prog_name="ask-deepwiki")
 def cli() -> None:
     """Query DeepWiki documentation for any GitHub repository.
 
@@ -63,11 +63,11 @@ def cli() -> None:
 
     Examples:
 
-        deepwiki-cli structure facebook/react
+        ask-deepwiki structure facebook/react
 
-        deepwiki-cli contents vercel/next.js
+        ask-deepwiki contents vercel/next.js
 
-        deepwiki-cli ask langchain-ai/langchain "How do I create a chain?"
+        ask-deepwiki ask langchain-ai/langchain "How do I create a chain?"
     """
     pass
 
@@ -118,9 +118,9 @@ def ask(repo: str, question: str) -> None:
 
     Examples:
 
-        deepwiki-cli ask facebook/react "What is Fiber?"
+        ask-deepwiki ask facebook/react "What is Fiber?"
 
-        deepwiki-cli ask langchain-ai/langchain "How do chains work?"
+        ask-deepwiki ask langchain-ai/langchain "How do chains work?"
     """
     client = DeepWikiClient()
     try:

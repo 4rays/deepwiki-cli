@@ -1,5 +1,5 @@
 [project]
-name = "deepwiki-cli"
+name = "ask-deepwiki"
 version = "0.1.0"
 description = "CLI tool for querying DeepWiki documentation"
 readme = "README.md"
@@ -28,7 +28,7 @@ Repository = "https://github.com/4rays/deepwiki-cli"
 Issues = "https://github.com/4rays/deepwiki-cli/issues"
 
 [project.scripts]
-deepwiki-cli = "deepwiki.cli:main"
+ask-deepwiki = "deepwiki.cli:main"
 
 [build-system]
 requires = ["hatchling"]
