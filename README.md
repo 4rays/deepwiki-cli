@@ -9,21 +9,22 @@ DeepWiki provides AI-generated documentation for open source repositories. This 
 ### Using uvx (recommended)
 
 ```bash
-uvx deepwiki --help
+uvx deepwiki-cli --help
 ```
 
 ### Using pip
 
 ```bash
-pip install deepwiki
+pip install deepwiki-cli
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/your-username/deepwiki-cli
+git clone https://github.com/4rays/deepwiki-cli
 cd deepwiki-cli
 uv sync
+uv run deepwiki-cli --help
 ```
 
 ## Usage
@@ -33,7 +34,7 @@ uv sync
 View the table of contents for a repository's documentation:
 
 ```bash
-deepwiki structure facebook/react
+deepwiki-cli structure facebook/react
 ```
 
 Output:
@@ -52,7 +53,7 @@ Output:
 Retrieve the complete documentation contents:
 
 ```bash
-deepwiki contents vercel/next.js
+deepwiki-cli contents vercel/next.js
 ```
 
 Note: This may return a large amount of text for repositories with extensive documentation.
@@ -62,7 +63,7 @@ Note: This may return a large amount of text for repositories with extensive doc
 Ask natural language questions about a repository:
 
 ```bash
-deepwiki ask facebook/react "What is Fiber?"
+deepwiki-cli ask facebook/react "What is Fiber?"
 ```
 
 Output:
@@ -73,19 +74,19 @@ Fiber is React's reconciliation algorithm introduced in React 16...
 More examples:
 
 ```bash
-deepwiki ask langchain-ai/langchain "How do I create a chain?"
-deepwiki ask pytorch/pytorch "What optimizers are available?"
-deepwiki ask microsoft/vscode "How does the extension API work?"
+deepwiki-cli ask langchain-ai/langchain "How do I create a chain?"
+deepwiki-cli ask pytorch/pytorch "What optimizers are available?"
+deepwiki-cli ask microsoft/vscode "How does the extension API work?"
 ```
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `deepwiki structure <repo>` | Get documentation structure (table of contents) |
-| `deepwiki contents <repo>` | Get full documentation contents |
-| `deepwiki ask <repo> "<question>"` | Ask a question about the repository |
-| `deepwiki --version` | Show version |
+| `deepwiki-cli structure <repo>` | Get documentation structure (table of contents) |
+| `deepwiki-cli contents <repo>` | Get full documentation contents |
+| `deepwiki-cli ask <repo> "<question>"` | Ask a question about the repository |
+| `deepwiki-cli --version` | Show version |
 | `deepwiki --help` | Show help |
 
 ## Repository Format
