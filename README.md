@@ -44,6 +44,7 @@ ask-deepwiki structure facebook/react
 ```
 
 Output:
+
 ```
 1. Overview
   1.1 Repository Purpose
@@ -73,6 +74,7 @@ ask-deepwiki ask facebook/react "What is Fiber?"
 ```
 
 Output:
+
 ```
 Fiber is React's reconciliation algorithm introduced in React 16...
 ```
@@ -87,13 +89,13 @@ ask-deepwiki ask microsoft/vscode "How does the extension API work?"
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `ask-deepwiki structure <repo>` | Get documentation structure (table of contents) |
-| `ask-deepwiki contents <repo>` | Get full documentation contents |
-| `ask-deepwiki ask <repo> "<question>"` | Ask a question about the repository |
-| `ask-deepwiki --version` | Show version |
-| `ask-deepwiki --help` | Show help |
+| Command                                | Description                                     |
+| -------------------------------------- | ----------------------------------------------- |
+| `ask-deepwiki structure <repo>`        | Get documentation structure (table of contents) |
+| `ask-deepwiki contents <repo>`         | Get full documentation contents                 |
+| `ask-deepwiki ask <repo> "<question>"` | Ask a question about the repository             |
+| `ask-deepwiki --version`               | Show version                                    |
+| `ask-deepwiki --help`                  | Show help                                       |
 
 ## Repository Format
 
